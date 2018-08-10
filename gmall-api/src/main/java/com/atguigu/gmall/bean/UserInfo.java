@@ -12,6 +12,7 @@ import java.io.Serializable;
    public class UserInfo implements Serializable {
         @Id
         @Column
+
         private String id;
         @Column
         private String loginName;

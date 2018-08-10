@@ -1,11 +1,13 @@
 package com.atguigu.gmall.bean;
 
 import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
+import javax.persistence.*;
 
 /**
  * @param
@@ -14,6 +16,7 @@ import java.util.Map;
 public class SpuSaleAttr implements Serializable {
     @Id
     @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     String id ;
 
     @Column
